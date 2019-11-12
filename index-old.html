@@ -1,0 +1,332 @@
+<html>
+
+<head>
+    <!-- <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script> -->
+    <!-- <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script> -->
+    <!-- <script src="assets/js/aframe-0.9.2.min.js"></script> -->
+    <script src="assets/js/aframe-0.5.0.min.js"></script>
+    <style>
+        body {
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+            <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+        </a-assets>
+
+        <a-sound src="src: url(/assets/sound/hino-nacional.mp3)" autoplay="true" on="true" loop="true"></a-sound>
+
+        <a-cylinder id="ground" src="https://cdn.aframe.io/a-painter/images/floor.jpg" radius="32" height="0.1">
+        </a-cylinder>
+        <a-assets> <img id="texture" src="texture.png"> </a-assets>
+        <a-sky id="background" src="#skyTexture" theta-length="90" radius="30"></a-sky>
+
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+        <a-entity camera look-controls position="0 1.6 0"></a-entity>
+        <a-text value="Hello, World!" position="0 2 0"></a-text>
+        <a-box src="https://i.imgur.com/Xh2hE4U.jpg" position="11 0 2.7" color="gray" depth="15" height="8" width="0.3">
+        </a-box>
+        <!--Lado direito-->
+        <a-box src="https://i.imgur.com/Xh2hE4U.jpg" position="-9 0 2.7" color="gray" depth="15" height="8" width="0.3">
+        </a-box>
+        <!--Lado esquerdo-->
+        <a-box src="https://i.imgur.com/Xh2hE4U.jpg" position="1 0 -5" color="gray" depth="0.4" height="8" width="20.0">
+        </a-box>
+        <!--Frente-->
+        <a-box src="https://i.imgur.com/Xh2hE4U.jpg" position="2 0 10" color="gray" depth="0.4" height="8" width="18.0">
+        </a-box>
+        <!--Atras-->
+        <a-box src="https://i.imgur.com/Xh2hE4U.jpg" position="1 4 2.5" color="gray" depth="15" height="0.14"
+            width="20.0"> </a-box>
+        <!--Teto-->
+        <a-box src="https://i.imgur.com/Xh2hE4U.jpg" position="-6.5 0 4" color="gray" depth="12" height="8" width="0.3">
+        </a-box>
+        <!--Lado esquerdo pequeno-->
+        <a-box src="https://i.imgur.com/Xh2hE4U.jpg" position="2 0 3" color="gray" depth="0.4" height="8" width="12.0">
+        </a-box>
+        <!--meio-->
+        <a-image src="/assets/img/president/deodoro-da-fonseca.png"></a-image>
+        <!--Presidentes-->
+        <!--1 Deodoro da Fonseca-->
+        <a-box src="/assets/img/president/deodoro-da-fonseca.jpg" position="-8.8 2 7" color="gray" depth="1"
+            height="2,2" width="0"
+            animation__mouseenter="property: scale; to: 1.5 1.4 1.3; dur: 300; startEvents: mouseenter"
+            animation__mouseleave="property: scale; to: 1 1 1; dur: 300; startEvents: mouseleave"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-8.8 1.5 8" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--2 Floriano Peixoto-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Floriano_Peixoto_%281891%29.jpg/800px-Floriano_Peixoto_%281891%29.jpg"
+            position="-8.8 2 5" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-8.8 1.5 6" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--3 Prudente de Morais-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Prudentedemorais.jpg/800px-Prudentedemorais.jpg"
+            position="-8.8 2 3" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-8.8 1.5 4" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--4 Campos_Sales-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Campos_Sales.jpg/800px-Campos_Sales.jpg"
+            position="-8.8 2 1" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-8.8 1.5 2" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--5 Rodrigues Alves-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Rodrigues_Alves_3.jpg/800px-Rodrigues_Alves_3.jpg"
+            position="-8.8 2 -1" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-8.8 1.5 0" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--6 Afonso Pena-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Afonso_Pena.jpg/800px-Afonso_Pena.jpg"
+            position="-8.8 2 -3" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-8.8 1.5 -2" color="gray" depth="1" height="1" width="0"> </a-box>
+
+        <!--7 Nilo Peçanha-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nilo_Pe%C3%A7anha_02.jpg/800px-Nilo_Pe%C3%A7anha_02.jpg"
+            position="-6.7 2 -4.8" color="gray" depth="0.1" height="2,2" width="1.4"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-8 1.5 -4.8" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--8 Hermes da Fonseca-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Hermes_da_Fonseca_%281910%29.jpg/800px-Hermes_da_Fonseca_%281910%29.jpg"
+            position="-4.1 2 -4.8" color="gray" depth="0.1" height="2,2" width="1.4"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-5.4 1.5 -4.8" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--9 Venceslau Brás-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Venceslau_Br%C3%A1s.jpg/800px-Venceslau_Br%C3%A1s.jpg"
+            position="-1.5 2 -4.8" color="gray" depth="0.1" height="2,2" width="1.4"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-2.8 1.5 -4.8" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--10 Delfim Moreira-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Delfim_Moreira_%281918%29.jpg/800px-Delfim_Moreira_%281918%29.jpg"
+            position="1.3 2 -4.8" color="gray" depth="0.1" height="2,2" width="1.4"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="0 1.5 -4.8" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--11 Epitácio Pessoa-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Epitacio_Pessoa_%281919%29.jpg/800px-Epitacio_Pessoa_%281919%29.jpg"
+            position="3.9 2 -4.8" color="gray" depth="0.1" height="2,2" width="1.4"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="2.6 1.5 -4.8" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--12 Artur_Bernardes-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Artur_Bernardes_%281922%29.jpg/800px-Artur_Bernardes_%281922%29.jpg"
+            position="6.5 2 -4.8" color="gray" depth="0.1" height="2,2" width="1.4"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="5.2 1.5 -4.8" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--13 Washington Luís-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Washington_Lu%C3%ADs_%28foto%29.jpg/800px-Washington_Lu%C3%ADs_%28foto%29.jpg"
+            position="9.1 2 -4.8" color="gray" depth="0.1" height="2,2" width="1.4"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="7.8 1.5 -4.8" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+
+
+        <!-- Júlio Prestes-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Cart%C3%A3o-postal_de_Campanha_de_J%C3%BAlio_Prestes_-_1930_%28cropped%29.jpg"
+            position="10.8 2 -3" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="10.8 1.5 -4" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--14 Getulio Vargas-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/5/50/Getulio_Vargas_%281930%29.jpg"
+            position="10.8 2 -1" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="10.8 1.5 -2" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--15 José Linhares-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Jos%C3%A9_Linhares_TSE.jpg" position="10.8 2 1"
+            color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="10.8 1.5 0" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--16 Eurico Gaspar Dutra-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/GASPARDUTRA.jpg/800px-GASPARDUTRA.jpg"
+            position="10.8 2 3" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="10.8 1.5 2" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--17 Getulio Dorneles Vargas-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/17_-_Get%C3%BAlio_Dorneles_Vargas_1951_derivative.jpg/800px-17_-_Get%C3%BAlio_Dorneles_Vargas_1951_derivative.jpg"
+            position="10.8 2 5" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="10.8 1.5 4" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--18 João Café Filho-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Caf%C3%A9_Filho.jpg/800px-Caf%C3%A9_Filho.jpg"
+            position="10.8 2 7" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="10.8 1.5 6" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--19 Carlos Luz-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/CarlosLuz.jpg/800px-CarlosLuz.jpg"
+            position="10.8 2 9" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="10.8 1.5 8" color="gray" depth="1" height="1" width="0"> </a-box>
+
+        <!--20 Nereu Ramos-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Presidente_Nereu_Ramos.jpg/800px-Presidente_Nereu_Ramos.jpg"
+            position="8.2 2 9.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="9.5 1.5 9.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--21 Juscelino Kubitschek-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Juscelino.jpg" position="5.6 2 9.7" color="gray"
+            depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="6.9 1.5 9.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--22 Jânio Quadros-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Janio_Quadros.png/800px-Janio_Quadros.png"
+            position="3 2 9.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="4.3 1.5 9.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--23 Ranieri Mazzilli-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ranieri_Mazzilli_%281961%29.jpg/800px-Ranieri_Mazzilli_%281961%29.jpg"
+            position="0.4 2 9.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="1.7 1.5 9.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--24 João Goulart-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Jango.jpg/800px-Jango.jpg"
+            position="-2.3 2 9.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-1 1.5 9.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--25 Ranieri Mazzilli-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ranieri_Mazzilli_%281961%29.jpg/800px-Ranieri_Mazzilli_%281961%29.jpg"
+            position="-4.9 2 9.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-3.6 1.5 9.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+
+        <!--26 Humberto Castelo Branco-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Castelobranco.jpg/800px-Castelobranco.jpg"
+            position="-6.3 2 8" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-6.3 1.5 9" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--27 Artur da Costa e Silva-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/6/66/Costa_e_Silva.jpg" position="-6.3 2 6"
+            color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-6.3 1.5 7" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--28 Emílio Garrastazu Médici-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Garrastazu_m%C3%A9dici.jpg/800px-Garrastazu_m%C3%A9dici.jpg"
+            position="-6.3 2 4" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-6.3 1.5 5" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--29 Ernesto Geisel-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Ernesto_Geisel.jpg/800px-Ernesto_Geisel.jpg"
+            position="-6.3 2 2" color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-6.3 1.5 3" color="gray" depth="1" height="1" width="0"> </a-box>
+        <!--30 João Figueiredo-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/a/af/Figueiredo_%28colour%29.jpg" position="-6.3 2 0"
+            color="gray" depth="1" height="2,2" width="0"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-6.3 1.5 1" color="gray" depth="1" height="1" width="0"> </a-box>
+
+
+        <!--31 José Sarney-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Jos%C3%A9_Sarney_Presidente.jpg"
+            position="-2.7 2 2.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-1.4 1.5 2.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--32 Fernando Collor-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Fernando_Collor_1992_B%26W.jpg"
+            position="0 2 2.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="1.3 1.5 2.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--33 Itamar Franco-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/8/87/Itamar_Augusto_Cautiero_Franco.gif"
+            position="2.6 2 2.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="3.9 1.5 2.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--34 Fernando Henrique Cardoso-->
+        <a-box src="https://upload.wikimedia.org/wikipedia/commons/4/46/Fernando_Henrique_Cardoso_%281999%29.jpg"
+            position="5.2 2 2.7" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="6.5 1.5 2.7" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--35 Luiz Inácio Lula da Silva-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lula_-_foto_oficial_-_05_jan_2007_%28cropped_3%29.jpg/800px-Lula_-_foto_oficial_-_05_jan_2007_%28cropped_3%29.jpg"
+            position="6.5 2 3.3" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="5.2 1.5 3.3" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--36 Dilma Rousseff-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg/800px-Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg"
+            position="3.9 2 3.3" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="2.6 1.5 3.3" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--37 Michel Temer-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Presidente_Michel_Temer_%28foto_oficial%29_-_cortada.jpg/800px-Presidente_Michel_Temer_%28foto_oficial%29_-_cortada.jpg"
+            position="1.3 2 3.3" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="0 1.5 3.3" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+        <!--31 Bolsonaro-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jair_Bolsonaro_em_24_de_abril_de_2019_%281%29_%28cropped%29.jpg/800px-Jair_Bolsonaro_em_24_de_abril_de_2019_%281%29_%28cropped%29.jpg"
+            position="-1.4 2 3.3" color="gray" depth="0.1" height="2,2" width="1.5"> </a-box>
+        <a-box
+            src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/74866353_2196171807148966_340115762930778112_n.jpg?_nc_cat=110&_nc_oc=AQmg5Y1MQJWItzwsvLoSDiMblgM6fDyMwHNWV062metgxOf-YjD-t8m-fmTZr5WYpVI&_nc_ht=scontent.frec5-1.fna&oh=faa5f09249be1b784b56afebcd498b3b&oe=5E62F688"
+            position="-2.7 1.5 3.3" color="gray" depth="0.1" height="1.1" width="1.1"> </a-box>
+
+
+        <!--Bandeira-->
+        <a-box
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png"
+            position="0 2 10.3" color="gray" depth="0.1" height="3" width="4"> </a-box>
+
+    </a-scene>
+</body>
+
+</html>
